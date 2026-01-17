@@ -1,0 +1,79 @@
+{
+    "Metadata": {
+        "title": "Astro",
+        "description": "A beautiful, privacy-focused iOS client for Immich. Rediscover your memories with a native experience."
+    },
+    "Navigation": {
+        "features": "Features",
+        "privacy": "Privacy",
+        "github": "GitHub"
+    },
+    "Hero": {
+        "titleLine1": "Your Photos.",
+        "titleLine2": "Your Universe.",
+        "description": "A beautiful, privacy-focused iOS client for Immich. \nRediscover your memories with a native, gesture-driven experience.",
+        "download": "Download on the App Store",
+        "downloadPrefix": "Download on the",
+        "downloadStore": "App Store"
+    },
+    "Features": {
+        "title": "Designed for Memories",
+        "items": {
+            "Native Performance": {
+                "title": "Native Performance",
+                "description": "Built with Swift for a buttery smooth experience on iOS."
+            },
+            "Privacy First": {
+                "title": "Privacy First",
+                "description": "Your photos stay on your server. No third-party tracking."
+            },
+            "Beautiful Design": {
+                "title": "Beautiful Design",
+                "description": "A modern, gesture-driven interface designed for photos."
+            },
+            "Memories": {
+                "title": "Memories",
+                "description": "Rediscover your past with intelligent \"Home\" collections."
+            }
+        }
+    },
+    "Footer": {
+        "copyright": "© {year} Astro"
+    },
+    "Privacy": {
+        "title": "Privacy Policy",
+        "lead": "Your privacy is critically important to us. At Astro, we have a few fundamental principles:",
+        "principles": [
+            "We don't ask you for personal information.",
+            "We don't share your personal information with anyone except to comply with the law, develop our products, or protect our rights.",
+            "We don't store personal information on our servers unless required for the on-going operation of one of our services."
+        ],
+        "sections": [
+            {
+                "title": "1. Data Collection",
+                "content": "Astro is a client for <0>Immich</0>. This means:",
+                "items": [
+                    "<0>Your Photos & Videos</0>: These are strictly communicated between your device and your personal Immich server. We (the developers of Astro) do not have access to them.",
+                    "<0>Credentials</0>: Your server URL and API keys are stored securely on your device (using iOS Keychain) and are never sent to us."
+                ]
+            },
+            {
+                "title": "2. Analytics & Crash Reports",
+                "content": "We do not collect behavioral analytics (e.g., which buttons you click).",
+                "extra": "Apple may collect anonymized crash reports and usage statistics depending on your device settings. This data helps us fix bugs and improve performance but contains no personally identifiable information."
+            },
+            {
+                "title": "3. Location Data",
+                "content": "Astro may request access to your photo library location data to display your memories on a map. This processing happens entirely on your device or your server. We do not track your location."
+            },
+            {
+                "title": "4. Changes to This Policy",
+                "content": "We may update our Privacy Policy from time to time. We encourage visitors to frequently check this page for any changes. Your continued use of the app after any change in this Privacy Policy will constitute your acceptance of such change."
+            },
+            {
+                "title": "5. Contact",
+                "content": "If you have any questions about this Privacy Policy, please contact us at <0>{email}</0>."
+            }
+        ]
+    }
+}
