@@ -34,6 +34,22 @@
             "Memories": {
                 "title": "Memories",
                 "description": "Rediscover your past with intelligent \"Home\" collections."
+            },
+            "AI Trips": {
+                "title": "AI Trips",
+                "description": "Intelligent trip clustering and summarization powered by AI."
+            },
+            "Place Discovery": {
+                "title": "Place Discovery",
+                "description": "Explore photos taken near your current location."
+            },
+            "Biometric Security": {
+                "title": "Biometric Security",
+                "description": "Protect your private photos with FaceID or TouchID."
+            },
+            "Global Ready": {
+                "title": "Global Ready",
+                "description": "Full support for English and Chinese."
             }
         }
     },

@@ -34,6 +34,22 @@
             "Memories": {
                 "title": "美好回忆",
                 "description": "通过智能的首页合集，重新发现你的美好回忆。"
+            },
+            "AI Trips": {
+                "title": "智能足迹",
+                "description": "基于 AI 的智能足迹聚类与总结，珍藏每一段旅程。"
+            },
+            "Place Discovery": {
+                "title": "周边探索",
+                "description": "探索你当前位置附近的摄影足迹，重温在那里的美好瞬间。"
+            },
+            "Biometric Security": {
+                "title": "生物识别安全",
+                "description": "通过 FaceID 或 TouchID 为你的隐私照片提供安全保障。"
+            },
+            "Global Ready": {
+                "title": "多语言支持",
+                "description": "完整支持中英文切换，为全球用户设计的原生体验。"
             }
         }
     },

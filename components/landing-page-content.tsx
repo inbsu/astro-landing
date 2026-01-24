@@ -2,7 +2,7 @@
 
 import React, { Fragment } from 'react'
 import { motion } from 'motion/react'
-import { Zap, Shield, Sparkles, Heart } from 'lucide-react'
+import { Zap, Shield, Sparkles, Heart, Brain, MapPin, Lock, Languages } from 'lucide-react'
 import { AppStoreButton } from '@/components/app-store-button'
 import { DeviceMockup } from '@/components/device-mockup'
 import { Spotlight } from '@/components/ui/spotlight'
@@ -13,6 +13,10 @@ const FEATURE_KEYS = [
     { key: 'Privacy First', icon: Shield },
     { key: 'Beautiful Design', icon: Sparkles },
     { key: 'Memories', icon: Heart },
+    { key: 'AI Trips', icon: Brain },
+    { key: 'Place Discovery', icon: MapPin },
+    { key: 'Biometric Security', icon: Lock },
+    { key: 'Global Ready', icon: Languages },
 ]
 
 export function LandingPageContent() {
@@ -67,7 +71,7 @@ export function LandingPageContent() {
                 <h2 className="mb-12 text-center text-3xl font-bold tracking-tight text-zinc-900 dark:text-white">
                     {t('Features.title')}
                 </h2>
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
                     {FEATURE_KEYS.map((feature, index) => {
                         const Icon = feature.icon
                         return (
