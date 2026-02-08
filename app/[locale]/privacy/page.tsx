@@ -5,8 +5,10 @@ import { use } from 'react';
 // Force static rendering
 export const dynamic = 'force-static';
 
+import { routing } from '@/i18n/routing';
+
 export function generateStaticParams() {
-    return [{ locale: 'en' }, { locale: 'zh' }];
+    return routing.locales.map((locale) => ({ locale }));
 }
 
 interface Principle {

@@ -35,8 +35,10 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 })
 
+import { routing } from '../../i18n/routing';
+
 export function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'zh' }];
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export default async function LocaleLayout({
