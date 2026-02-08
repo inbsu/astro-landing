@@ -17,39 +17,39 @@
         "downloadStore": "App Store"
     },
     "Features": {
-        "title": "Designed for Memories",
+        "title": "Your Universe, Organized.",
         "items": {
-            "Native Performance": {
-                "title": "Native Performance",
-                "description": "Built with Swift for a buttery smooth experience on iOS."
+            "Home Dashboard": {
+                "title": "Home Dashboard",
+                "description": "Start your day with 'On This Day', recent highlights, and upcoming birthdays."
+            },
+            "Interactive Map": {
+                "title": "Interactive Map",
+                "description": "Explore your photos on a beautiful, clustered map. See where you've been."
+            },
+            "AI Enrichment": {
+                "title": "Gemini AI",
+                "description": "Magical trip titles and summaries powered by Google Gemini 2.0 Flash."
+            },
+            "Smart Timeline": {
+                "title": "Smart Timeline",
+                "description": " buttery smooth scrolling with optimized monthly views and people aggregation."
             },
             "Privacy First": {
                 "title": "Privacy First",
-                "description": "Your photos stay on your server. No third-party tracking."
-            },
-            "Beautiful Design": {
-                "title": "Beautiful Design",
-                "description": "A modern, gesture-driven interface designed for photos."
-            },
-            "Memories": {
-                "title": "Memories",
-                "description": "Rediscover your past with intelligent \"Home\" collections."
-            },
-            "AI Trips": {
-                "title": "AI Trips",
-                "description": "Intelligent trip clustering and summarization powered by AI."
-            },
-            "Place Discovery": {
-                "title": "Place Discovery",
-                "description": "Explore photos taken near your current location."
+                "description": "Your photos stay on your server. FaceID protection for sensitive content."
             },
             "Biometric Security": {
                 "title": "Biometric Security",
-                "description": "Protect your private photos with FaceID or TouchID."
+                "description": "Secure your archived and hidden photos with FaceID or TouchID."
+            },
+            "Widgets": {
+                "title": "Widgets",
+                "description": "Bring your best memories to your Home Screen with beautiful widgets."
             },
             "Global Ready": {
                 "title": "Global Ready",
-                "description": "Full support for English and Chinese."
+                "description": "Native support for English and Chinese."
             }
         }
     },

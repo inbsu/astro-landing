@@ -18,11 +18,11 @@ export function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex justify-center p-4">
-      <nav className="flex items-center gap-6 rounded-full bg-white/70 px-6 py-2 backdrop-blur-md ring-1 ring-black/5 dark:bg-black/70 dark:ring-white/10 transition-all duration-300">
-        <Link href="/" className="font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-          Astro
+      <nav className="flex items-center gap-6 rounded-full bg-white/80 px-6 py-2 backdrop-blur-xl ring-1 ring-black/5 dark:bg-black/80 dark:ring-white/10 transition-all duration-300 shadow-sm">
+        <Link href="/" className="font-bold tracking-tight text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
+          <span>Astro</span>
         </Link>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.key}

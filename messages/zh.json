@@ -17,39 +17,39 @@
         "downloadStore": "App Store"
     },
     "Features": {
-        "title": "为回忆而设计",
+        "title": "你的宇宙，井井有条。",
         "items": {
-            "Native Performance": {
-                "title": "原生性能",
-                "description": "使用 Swift 构建，为你带来 iOS 上如丝般顺滑的体验。"
+            "Home Dashboard": {
+                "title": "探索主页",
+                "description": "从“那年今日”、近期高光和即将到来的生日开始美好的一天。"
+            },
+            "Interactive Map": {
+                "title": "互动地图",
+                "description": "在精美的聚合地图上探索你的足迹。重温你去过的每一个地方。"
+            },
+            "AI Enrichment": {
+                "title": "Gemini AI",
+                "description": "由 Google Gemini 2.0 Flash 驱动，为旅程生成充满创意的标题和总结。"
+            },
+            "Smart Timeline": {
+                "title": "智能时间轴",
+                "description": "丝般顺滑的滚动体验，支持优化的月份视图以和人物聚合。"
             },
             "Privacy First": {
                 "title": "隐私优先",
-                "description": "你的照片只保留在你的服务器上。没有第三方追踪。"
-            },
-            "Beautiful Design": {
-                "title": "精美设计",
-                "description": "专为照片设计的现代化手势驱动界面。"
-            },
-            "Memories": {
-                "title": "美好回忆",
-                "description": "通过智能的首页合集，重新发现你的美好回忆。"
-            },
-            "AI Trips": {
-                "title": "智能足迹",
-                "description": "基于 AI 的智能足迹聚类与总结，珍藏每一段旅程。"
-            },
-            "Place Discovery": {
-                "title": "周边探索",
-                "description": "探索你当前位置附近的摄影足迹，重温在那里的美好瞬间。"
+                "description": "你的照片只保留在你的服务器上。FaceID 全方位守护敏感内容。"
             },
             "Biometric Security": {
-                "title": "生物识别安全",
-                "description": "通过 FaceID 或 TouchID 为你的隐私照片提供安全保障。"
+                "title": "生物识别",
+                "description": "使用 FaceID 或 TouchID 保护你的归档和隐藏照片。"
+            },
+            "Widgets": {
+                "title": "小组件",
+                "description": "精美的主屏幕小组件，让最美的回忆触手可及。"
             },
             "Global Ready": {
-                "title": "多语言支持",
-                "description": "完整支持中英文切换，为全球用户设计的原生体验。"
+                "title": "全球支持",
+                "description": "原生支持简体中文和英语，为全球用户设计。"
             }
         }
     },

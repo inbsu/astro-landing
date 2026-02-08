@@ -11,6 +11,7 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -18,11 +19,52 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+
+  body {
+    @apply antialiased bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100;
+  }
+}
+
+@layer utilities {
+  .bg-grid-small-black {
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle, #000 1px, transparent 1px);
+  }
+
+  .bg-grid-small-white {
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle, #fff 1px, transparent 1px);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-zinc-900 to-zinc-500 dark:from-white dark:to-zinc-500;
+  }
+
+  /* Premium mesh gradient animation */
+  .animate-aurora {
+    animation: aurora 20s linear infinite;
+  }
+
+  @keyframes aurora {
+    0% {
+      background-position: 50% 50%, 50% 50%;
+    }
+
+    100% {
+      background-position: 350% 50%, 350% 50%;
+    }
+  }
 }
 
 @theme {
   --font-sans: var(--font-geist);
   --font-mono: var(--font-geist-mono);
+}
+
+@layer base {
+  :root {
+    --primary: 217 91% 60%;
+  }
 }
 
 :root {
