@@ -21,8 +21,24 @@ import { DeviceMockup } from '@/components/device-mockup'
 import { BentoGrid, BentoGridItem } from '@/components/ui/bento-grid'
 import { WordRotate } from '@/components/ui/word-rotate'
 import { ShinyButton } from '@/components/ui/shiny-button'
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion"
+import { AppStoreButton as UIAppStoreButton } from '@/components/ui/app-store-button'
 import { useTranslations } from 'next-intl'
 import { GITHUB_URL } from '@/app/data'
+import { cn } from '@/lib/utils'
+import {
+    IconCalendar,
+    IconGlobe,
+    IconBrain,
+    IconTimeline,
+    IconDeviceDesktop,
+    IconLock
+} from '@tabler/icons-react'
 
 // Map features to grid configuration
 const getFeatureConfig = (key: string) => {
@@ -139,6 +155,25 @@ export function LandingPageContent() {
                         })}
                     </BentoGrid>
                 </div>
+            </section>
+
+            {/* FAQ Section */}
+            <section className="w-full max-w-3xl px-4 py-24 mx-auto">
+                <h2 className="text-3xl font-bold tracking-tight text-center text-zinc-900 dark:text-white sm:text-4xl mb-12">
+                    {t('FAQ.title')}
+                </h2>
+                <Accordion type="single" collapsible className="w-full">
+                    {['q1', 'q2', 'q3', 'q4'].map((key) => (
+                        <AccordionItem key={key} value={key}>
+                            <AccordionTrigger className="text-left">
+                                {t(`FAQ.items.${key}.question`)}
+                            </AccordionTrigger>
+                            <AccordionContent>
+                                {t(`FAQ.items.${key}.answer`)}
+                            </AccordionContent>
+                        </AccordionItem>
+                    ))}
+                </Accordion>
             </section>
 
             {/* Bottom CTA */}

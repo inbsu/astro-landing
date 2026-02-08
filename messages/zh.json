@@ -53,6 +53,27 @@
             }
         }
     },
+    "FAQ": {
+        "title": "常见问题",
+        "items": {
+            "q1": {
+                "question": "我的数据安全吗？",
+                "answer": "安全。Astro 直接与您的 Immich 服务器通信。您的照片和 API 密钥永远不会离开您的设备。"
+            },
+            "q2": {
+                "question": "Astro 是免费的吗？",
+                "answer": "Astro 是一款付费应用以支持后续开发，但在早期可能通过 TestFlight 提供测试。"
+            },
+            "q3": {
+                "question": "我需要 Immich 服务器吗？",
+                "answer": "是的，Astro 是 Immich 的第三方客户端，您需要自己托管 Immich 实例。"
+            },
+            "q4": {
+                "question": "支持视频播放吗？",
+                "answer": "支持，Astro 提供流畅的视频播放和拖动预览体验。"
+            }
+        }
+    },
     "Footer": {
         "copyright": "© {year} Astro"
     },

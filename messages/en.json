@@ -53,6 +53,27 @@
             }
         }
     },
+    "FAQ": {
+        "title": "Frequently Asked Questions",
+        "items": {
+            "q1": {
+                "question": "Is my data safe?",
+                "answer": "Yes. Astro communicates directly with your Immich server. Your photos and API keys never leave your devices."
+            },
+            "q2": {
+                "question": "Is Astro free?",
+                "answer": "Astro is a paid app to support development, but we may offer a TestFlight or trial version."
+            },
+            "q3": {
+                "question": "Do I need an Immich server?",
+                "answer": "Yes, Astro is a third-party client for Immich. You need to host your own Immich instance."
+            },
+            "q4": {
+                "question": "Does it support video?",
+                "answer": "Yes, Astro supports smooth video playback and scrubbing."
+            }
+        }
+    },
     "Footer": {
         "copyright": "© {year} Astro"
     },

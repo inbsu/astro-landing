@@ -3,6 +3,14 @@
 import { Link, usePathname } from '@/i18n/routing'
 import { GITHUB_URL } from '@/app/data'
 import { useLocale, useTranslations } from 'next-intl'
+import { Menu } from 'lucide-react'
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 
 export function Header() {
   const t = useTranslations('Navigation')
@@ -22,7 +30,9 @@ export function Header() {
         <Link href="/" className="font-bold tracking-tight text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
           <span>Astro</span>
         </Link>
-        <div className="flex items-center gap-6">
+
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.key}
@@ -48,6 +58,49 @@ export function Header() {
           >
             {isEnglish ? '中文' : 'En'}
           </Link>
+        </div>
+
+        {/* Mobile Navigation */}
+        <div className="md:hidden flex items-center gap-4">
+          <Link
+            href={pathname}
+            locale={isEnglish ? 'zh' : 'en'}
+            className="flex h-8 w-12 items-center justify-center rounded-full border border-zinc-200 bg-zinc-50 text-xs font-medium text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
+          >
+            {isEnglish ? '中' : 'En'}
+          </Link>
+          <Sheet>
+            <SheetTrigger asChild>
+              <button className="p-2 -mr-2 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100">
+                <Menu className="h-5 w-5" />
+                <span className="sr-only">Open menu</span>
+              </button>
+            </SheetTrigger>
+            <SheetContent side="top">
+              <SheetHeader>
+                <SheetTitle>Astro</SheetTitle>
+              </SheetHeader>
+              <div className="flex flex-col gap-4 mt-8">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.key}
+                    href={link.href}
+                    className="text-lg font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-200"
+                  >
+                    {t(link.key)}
+                  </Link>
+                ))}
+                <a
+                  href={GITHUB_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-200"
+                >
+                  {t('github')}
+                </a>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </nav>
     </header>
