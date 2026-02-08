@@ -3,7 +3,7 @@
 import { Link, usePathname } from '@/i18n/routing'
 import { GITHUB_URL } from '@/app/data'
 import { useLocale, useTranslations } from 'next-intl'
-import { Menu } from 'lucide-react'
+import { Menu, Globe } from 'lucide-react'
 import {
   Sheet,
   SheetContent,
@@ -11,6 +11,13 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { Button } from '@/components/ui/button'
 
 export function Header() {
   const t = useTranslations('Navigation')
@@ -22,7 +29,38 @@ export function Header() {
     { key: 'privacy', href: '/privacy' },
   ]
 
-  const isEnglish = locale === 'en'
+  const languages = [
+    { code: 'en', label: 'English' },
+    { code: 'zh', label: '中文' },
+    { code: 'ja', label: '日本語' },
+    { code: 'ko', label: '한국어' },
+  ]
+
+  const LanguageSelector = () => (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="ghost" size="icon" className="rounded-full">
+          <Globe className="h-5 w-5 text-zinc-600 dark:text-zinc-400" />
+          <span className="sr-only">Toggle language</span>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        {languages.map((lang) => (
+          <DropdownMenuItem key={lang.code} asChild>
+            <Link
+              href={pathname}
+              locale={lang.code}
+              className="w-full cursor-pointer"
+            >
+              <span className={locale === lang.code ? 'font-bold' : ''}>
+                {lang.label}
+              </span>
+            </Link>
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  )
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex justify-center p-4">
@@ -51,24 +89,12 @@ export function Header() {
             {t('github')}
           </a>
 
-          <Link
-            href={pathname}
-            locale={isEnglish ? 'zh' : 'en'}
-            className="flex h-8 w-16 items-center justify-center rounded-full border border-zinc-200 bg-zinc-50 text-sm font-medium text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
-          >
-            {isEnglish ? '中文' : 'En'}
-          </Link>
+          <LanguageSelector />
         </div>
 
         {/* Mobile Navigation */}
         <div className="md:hidden flex items-center gap-4">
-          <Link
-            href={pathname}
-            locale={isEnglish ? 'zh' : 'en'}
-            className="flex h-8 w-12 items-center justify-center rounded-full border border-zinc-200 bg-zinc-50 text-xs font-medium text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
-          >
-            {isEnglish ? '中' : 'En'}
-          </Link>
+          <LanguageSelector />
           <Sheet>
             <SheetTrigger asChild>
               <button className="p-2 -mr-2 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100">

@@ -1,0 +1,116 @@
+{
+    "Metadata": {
+        "title": "Astro",
+        "description": "Immich를 위한 아름답고 개인정보 보호에 중점을 둔 iOS 클라이언트. 네이티브 경험으로 추억을 재발견하세요."
+    },
+    "Navigation": {
+        "features": "기능",
+        "privacy": "개인정보 처리방침",
+        "github": "GitHub"
+    },
+    "Hero": {
+        "titleLine1": "당신의 사진.",
+        "titleLine2": "당신의 우주.",
+        "description": "Immich를 위한 아름답고 개인정보 보호에 중점을 둔 iOS 클라이언트.\n네이티브 제스처 경험으로 추억을 재발견하세요.",
+        "download": "App Store에서 다운로드",
+        "downloadPrefix": "다운로드",
+        "downloadStore": "App Store"
+    },
+    "Features": {
+        "title": "당신의 우주, 체계적으로.",
+        "items": {
+            "Home Dashboard": {
+                "title": "홈 대시보드",
+                "description": "'오늘의 추억', 최근 하이라이트, 다가오는 생일로 하루를 시작하세요."
+            },
+            "Interactive Map": {
+                "title": "인터랙티브 지도",
+                "description": "아름다운 클러스터링 지도로 사진을 탐색하세요. 어디를 다녀왔는지 확인해보세요."
+            },
+            "AI Enrichment": {
+                "title": "Gemini AI",
+                "description": "Google Gemini 2.0 Flash로 구동되는 마법 같은 여행 제목 및 요약."
+            },
+            "Smart Timeline": {
+                "title": "스마트 타임라인",
+                "description": "최적화된 월별 보기 및 인물 집계를 통한 부드러운 스크롤."
+            },
+            "Privacy First": {
+                "title": "프라이버시 우선",
+                "description": "사진은 서버에 안전하게 보관됩니다. FaceID로 민감한 콘텐츠를 보호하세요."
+            },
+            "Biometric Security": {
+                "title": "생체 보안",
+                "description": "보관된 사진과 숨겨진 사진을 FaceID 또는 TouchID로 보호합니다."
+            },
+            "Widgets": {
+                "title": "위젯",
+                "description": "아름다운 위젯으로 최고의 추억을 홈 화면에 가져오세요."
+            },
+            "Global Ready": {
+                "title": "글로벌 지원",
+                "description": "영어, 중국어, 일본어, 한국어 네이티브 지원."
+            }
+        }
+    },
+    "FAQ": {
+        "title": "자주 묻는 질문",
+        "items": {
+            "q1": {
+                "question": "내 데이터는 안전한가요?",
+                "answer": "네. Astro는 Immich 서버와 직접 통신합니다. 사진과 API 키는 기기를 절대 떠나지 않습니다."
+            },
+            "q2": {
+                "question": "Astro는 무료인가요?",
+                "answer": "Astro는 개발을 지원하기 위한 유료 앱이지만, TestFlight 또는 체험판을 제공할 수 있습니다."
+            },
+            "q3": {
+                "question": "Immich 서버가 필요한가요?",
+                "answer": "네, Astro는 Immich의 타사 클라이언트입니다. 자신만의 Immich 인스턴스를 호스팅해야 합니다."
+            },
+            "q4": {
+                "question": "비디오를 지원하나요?",
+                "answer": "네, Astro는 부드러운 비디오 재생 및 스크러빙을 지원합니다."
+            }
+        }
+    },
+    "Footer": {
+        "copyright": "© {year} Astro"
+    },
+    "Privacy": {
+        "title": "개인정보 처리방침",
+        "lead": "귀하의 개인정보는 우리에게 매우 중요합니다. Astro에는 몇 가지 기본 원칙이 있습니다:",
+        "principles": [
+            "우리는 귀하에게 개인정보를 요구하지 않습니다.",
+            "법률 준수, 제품 개발 또는 권리 보호를 제외하고는 누구와도 개인정보를 공유하지 않습니다.",
+            "서비스의 지속적인 운영에 필요한 경우를 제외하고는 서버에 개인정보를 저장하지 않습니다."
+        ],
+        "sections": [
+            {
+                "title": "1. 데이터 수집",
+                "content": "Astro는 <0>Immich</0>의 클라이언트입니다. 이는 다음을 의미합니다:",
+                "items": [
+                    "<0>사진 및 비디오</0>: 이는 귀하의 기기와 개인 Immich 서버 간에만 통신됩니다. 우리(Astro 개발자)는 이에 접근할 수 없습니다.",
+                    "<0>자격 증명</0>: 서버 URL 및 API 키는 기기(iOS Keychain 사용)에 안전하게 저장되며 우리에게 전송되지 않습니다."
+                ]
+            },
+            {
+                "title": "2. 분석 및 충돌 보고서",
+                "content": "우리는 행동 분석(예: 클릭한 버튼)을 수집하지 않습니다.",
+                "extra": "Apple은 기기 설정에 따라 익명화된 충돌 보고서 및 사용 통계를 수집할 수 있습니다. 이 데이터는 버그 수정 및 성능 향상에 도움이 되지만 개인 식별 정보는 포함되지 않습니다."
+            },
+            {
+                "title": "3. 위치 데이터",
+                "content": "Astro는 지도에 추억을 표시하기 위해 사진 라이브러리 위치 데이터에 대한 접근을 요청할 수 있습니다. 이 처리는 전적으로 기기 또는 서버에서 이루어집니다. 우리는 귀하의 위치를 추적하지 않습니다."
+            },
+            {
+                "title": "4. 본 정책의 변경",
+                "content": "우리는 수시로 개인정보 처리방침을 업데이트할 수 있습니다. 변경 사항이 있는지 이 페이지를 자주 확인하는 것이 좋습니다. 본 개인정보 처리방침 변경 후 앱을 계속 사용하는 것은 그러한 변경을 수락하는 것으로 간주됩니다."
+            },
+            {
+                "title": "5. 문의",
+                "content": "이 개인정보 처리방침에 대해 질문이 있으시면 <0>{email}</0>로 문의해 주십시오."
+            }
+        ]
+    }
+}
