@@ -142,12 +142,25 @@ export function LandingPageContent() {
                     <BentoGrid>
                         {FEATURE_KEYS.map((key, i) => {
                             const config = getFeatureConfig(key)
+                            // Generate a placeholder image URL based on the feature title
+                            // Using a dark/light neutral background color
+                            const imageUrl = `https://placehold.co/600x400/18181b/ffffff?text=${encodeURIComponent(key)}`
+
                             return (
                                 <BentoGridItem
                                     key={key}
                                     title={t(`Features.items.${key}.title`)}
                                     description={t(`Features.items.${key}.description`)}
-                                    header={<div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800" />}
+                                    header={
+                                        <div className="relative flex flex-1 w-full h-full min-h-[6rem] rounded-xl overflow-hidden">
+                                            <img
+                                                src={imageUrl}
+                                                alt={key}
+                                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-200 group-hover/bento:scale-105 opacity-80"
+                                            />
+                                            <div className="absolute inset-0 bg-black/10 group-hover/bento:bg-transparent transition-colors duration-200" />
+                                        </div>
+                                    }
                                     icon={<config.icon className="h-4 w-4 text-neutral-500" />}
                                     className={config.className}
                                 />
